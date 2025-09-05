@@ -1,0 +1,11 @@
+const avanca = document.querySelectorA11('.btn-proximo');
+
+avanca.forEach(button => {
+    button.addEventListener('click, function'(){
+        const atual = document.querySelector('.ativo');
+        const proximoPaso = 'paso-' + this.getAttribute('data-proximo');
+       
+        atual.classList.remove('ativo');
+        document.getElementById(proximoPaso).classList.add('ativo');
+    })
+})
